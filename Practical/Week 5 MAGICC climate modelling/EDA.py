@@ -18,8 +18,10 @@ df_melted = pd.melt(joint_df, id_vars=['model', 'region', 'scenario', 'unit', 'v
                     value_name = 'Emissions')
 
 df_melted['Year'] = df_melted['Year'].astype(int)
+# remove the 'Emissions|' prefix from the 'variable' column
+df_melted['variable'] = df_melted['variable'].str.replace('Emissions|', '', regex=False)
 
-print(df_melted)
+print(df_melted.head())
 df_melted.to_csv('/Users/yangyangxiayule/Documents/GitHub/Environmental-Modelling/Practical/Week 5 MAGICC climate modelling/Practical/joint_melted_df.csv')
 
 ssp119 = df_melted.query('scenario == "ssp119"')
@@ -32,14 +34,16 @@ ssp585.to_csv('/Users/yangyangxiayule/Documents/GitHub/Environmental-Modelling/P
 #EDA
 sns.set(style="whitegrid")
 
-plt.figure(figsize=(12, 6))
+plt.figure(figsize=(16, 9))
 
 sns.lineplot(data=ssp585, x='Year', y='Emissions', hue='variable')
 sns.lineplot(data=ssp119, x='Year', y='Emissions', hue='variable', linestyle="--")
 
+
 plt.title('Comparison of Emissions Trends: SSP5-8.5 vs SSP1-1.9', fontsize=16)
 plt.xlabel('Year', fontsize=12)
 plt.ylabel('Emissions', fontsize=12)
-plt.legend(title='Gas Type')
+plt.legend(loc='upper left', bbox_to_anchor=(1, 1), title='Gas Type')
+plt.tight_layout()
 plt.show()
-plt.savefig('/Users/yangyangxiayule/Documents/GitHub/Environmental-Modelling/Practical/Week 5 MAGICC climate modelling/Practical/all_data.png')
+#plt.savefig('/Users/yangyangxiayule/Documents/GitHub/Environmental-Modelling/Practical/Week 5 MAGICC climate modelling/Practical/all_data.png')
