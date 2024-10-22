@@ -12,6 +12,8 @@
 ### Part 1: 
 Every model need input data. We will use two different emissions scenarios as input datasets for our two respective simulations.
 1. **SSP5-8.5** - has **high greenhouse gas emissions** in the future (a typical world without climate action, i.e., limited/ no climate policy to reduce global emissions of GHGs)
-2. **SSP1-1.9** - has **low GHGs emissions**, a future world with **strong climate action**, in line with the 2015 United Nations Paris Agreement.\
+2. **SSP1-1.9** - has **low GHGs emissions**, a future world with **strong climate action**, in line with the 2015 United Nations Paris Agreement.
 <br>
-We will run the two scenarios separately and after we have done the simulations we will compare them.
+
+We will run the two scenarios separately.\
+We will compare them afterwards.
