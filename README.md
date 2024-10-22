@@ -17,3 +17,9 @@ Every model need input data. We will use two different emissions scenarios as in
 
 We will run the two scenarios separately.\
 We will compare them afterwards.
+
+![compare SSP5-8.5 (solid line) with SSP1-1.9](https://github.com/Haru-Tachibana/Environmental-Modelling/blob/main/Practical/Week%205%20MAGICC%20climate%20modelling/compare.png)
+*Fig.1 - the trends of GHGs emissions for two scenarios.*
+
+### The effects of numbers of ocean layers on the simulation results
+![](https://climateextremes.org.au/wp-content/uploads/what-does-climate-model-resolution-mean_V2-700x523.png)
