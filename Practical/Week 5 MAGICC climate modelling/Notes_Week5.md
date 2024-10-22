@@ -24,10 +24,11 @@ We will compare them afterwards.
 ### The effects of numbers of ocean layers on the simulation results
 ![](https://climateextremes.org.au/wp-content/uploads/what-does-climate-model-resolution-mean_V2-700x523.png)\
 Read this article: [What does climate model resolution mean?](https://climateextremes.org.au/what-does-climate-model-resolution-mean/)
->MAGICC uses 50 layers for the ocean as a default.
+>MAGICC uses 50 layers for the ocean as a default.\
 >Do a simulation for SSP5-8.5 with just 10 layers, to see if it make a difference to the simulated climate.
 
 **Summary:**
 - The simulated global mean surface temperature is **0.18°C cooler** with 10-ocean-layer model than the 50-ocean-layer model. (The difference between the two simulations is only due to the number of layers in the ocean).
 - This shows that choices and decisions on how you setup your model can affect the results. A difference in global average temperature of 0.18°C is not small.
 - However, you will see that the climate simulated by the model is more sensitive to the greenhouse gas emissions than it is to choices on number of layers in the ocean – this is because there is a larger difference in temperature between the SSP5-8.5 and SSP1-1.9 scenarios, than there is between the 10 layer and 50 layer simulations.
+- it's not a physically based model (numerical eqation based model), therefore, it's quite hard to understand why the number of ocean layers will lead to a change in simulated values.
